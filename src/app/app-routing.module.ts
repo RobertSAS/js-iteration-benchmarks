@@ -3,13 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'lodash',
+    path: '',
     loadChildren: () => import('./lodash-test/lodash-test.module').then(m => m.LodashTestModule)
-  },
-
-  {
-    path: 'lodash-es',
-    loadChildren: () => import('./lodash-es-test/lodash-es-test.module').then(m => m.LodashEsTestModule)
   }
 ];
 
