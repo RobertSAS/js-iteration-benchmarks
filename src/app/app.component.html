@@ -1,3 +1,15 @@
-<li><a routerLink="lodash" routerLinkActive="active">lodash tests</a></li>
-<li><a routerLink="lodash-es" routerLinkActive="active">lodash-es tests</a></li>
-<router-outlet></router-outlet>
+<div
+  style="max-height: 100vh; max-width: 100vw; display: grid; grid-template-rows: 1fr auto">
+  <h1>Object and Array iteration tests</h1>
+
+  <div style="display: grid; grid-template-columns: auto 1fr; grid-column-gap: 12px; overflow: auto">
+    <div>
+      <ng-container *ngFor="let route of routes">
+        <li><a [routerLink]="route.path" routerLinkActive="active">{{route.path}}</a></li>
+      </ng-container>
+    </div>
+    <div style="overflow: auto; max-height: 100%">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
