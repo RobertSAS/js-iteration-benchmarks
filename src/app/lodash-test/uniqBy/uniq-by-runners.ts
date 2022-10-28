@@ -1,4 +1,4 @@
-import { filterArrayByUnique, TestResults } from "../../testFunctions";
+import { AllTestResults, filterArrayByUnique } from "../../testFunctions";
 import { uniqBy } from "lodash-es";
 
 export const uniqByArrayRunners = {
@@ -12,4 +12,4 @@ export const uniqByArrayRunners = {
   }
 }
 
-export const uniqByResults: TestResults = {};
+export const uniqByResults: AllTestResults = {};
