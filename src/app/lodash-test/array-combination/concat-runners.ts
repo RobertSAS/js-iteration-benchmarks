@@ -1,4 +1,4 @@
-import { TestResults } from "../../testFunctions";
+import { AllTestResults } from "../../testFunctions";
 import { concat } from "lodash-es";
 
 export const concatArrayRunners = {
@@ -31,5 +31,5 @@ export const concatArrayRunners = {
   }
 }
 
-export const concatResults: TestResults = {};
+export const concatResults: AllTestResults = {};
 

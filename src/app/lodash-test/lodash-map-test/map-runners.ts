@@ -1,5 +1,5 @@
 import { map } from "lodash";
-import { mapObjectKeys, TestResults } from "../../testFunctions";
+import { AllTestResults, mapObjectKeys } from "../../testFunctions";
 
 type resultType = string[];
 export const mapObjectRunners: {
@@ -9,5 +9,5 @@ export const mapObjectRunners: {
   'lodash': (values: { [key: string]: number; }) => map(values, (v) => `${ v }`)
 }
 
-export const mapResults: TestResults = {};
+export const mapResults: AllTestResults = {};
 

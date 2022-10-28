@@ -1,5 +1,5 @@
 import { each, forEach } from "lodash";
-import { forEachObjectKey, TestResults } from "../../testFunctions";
+import { AllTestResults, forEachObjectKey } from "../../testFunctions";
 
 export const lodashObjectRunners = {
   'fastForEachObjectKey': (values: { [key: string]: number; }) => {
@@ -62,5 +62,5 @@ export const lodashArrayRunners = {
   },
 }
 
-export const foreachResults: TestResults = {};
+export const foreachResults: AllTestResults = {};
 
