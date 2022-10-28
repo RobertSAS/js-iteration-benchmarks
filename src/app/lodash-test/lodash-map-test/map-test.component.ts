@@ -25,7 +25,6 @@ export class MapTestComponent {
   results = mapResults;
 
   constructor() {
-    console.log(mapResults, mapObjectRunners, mapExpectations.objectTests)
     buildTests(mapResults, mapObjectRunners, mapExpectations.objectTests)
   }
 
